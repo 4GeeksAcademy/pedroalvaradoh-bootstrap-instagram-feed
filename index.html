@@ -16,122 +16,121 @@
 </head>
 
 <body>
-    <div class="container">
-        <!-- Aquí va el header/navbar de la página -->
-        <div class="row p-3 bg-light rounded">
-            <div class="col-8 fs-4 text"><i class="bi bi-instagram pe-2"></i>Instagram</div>
-            <div class="col-4 d-flex gap-2 justify-content-end">
-                <button type="button" class="btn btn-success flex-shrink-0" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">
-                    Create new Post
+    <!-- Aquí va el header/navbar de la página -->
+    <div class="row p-3 bg-light rounded">
+        <div class="col-8 fs-4 text"><i class="bi bi-instagram pe-2"></i>Instagram</div>
+        <div class="col-4 d-flex gap-2 justify-content-end">
+            <button type="button" class="btn btn-success flex-shrink-0" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Create new Post
+            </button>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-gear-fill"></i>
                 </button>
-
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-gear-fill"></i>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                    </ul>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
             </div>
-            <!-- Aquí la info del MODAL -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Create new Post</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Aquí la info del MODAL -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Create new Post</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Caption:</h6>
+                        <div class="form-outline">
+                            <input type="text" id="typeText" class="form-control "
+                                placeholder="Add the caption of your post here" style="height: 60px;" />
+                            <label class="form-label" for="typeText"></label>
+                            <button type="button" class="btn btn-light btn-outline-secondary mt-1"><i
+                                    class="bi bi-camera-fill"></i></button>
+                            <button type="button" class="btn btn-light btn-outline-secondary mt-1"><i
+                                    class="bi bi-geo-alt-fill"></i></button>
                         </div>
-                        <div class="modal-body">
-                            <h6>Caption:</h6>
-                            <div class="form-outline">
-                                <input type="text" id="typeText" class="form-control "
-                                    placeholder="Add the caption of your post here" style="height: 60px;" />
-                                <label class="form-label" for="typeText"></label>
-                                <button type="button" class="btn btn-light btn-outline-secondary mt-1"><i
-                                        class="bi bi-camera-fill"></i></button>
-                                <button type="button" class="btn btn-light btn-outline-secondary mt-1"><i
-                                        class="bi bi-geo-alt-fill"></i></button>
-                            </div>
 
 
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-success">Publish</button>
-                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Publish</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Aquí van los íconos de cambio de vista -->
-        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                    type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
-                        class="bi bi-grid-3x3 fs-4"></i></button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
-                        class="bi bi-window fs-4"></i></button>
-            </li>
+    </div>
 
-        </ul>
+    <!-- Aquí van los íconos de cambio de vista -->
+    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="tab" data-bs-target="#pills-home"
+                type="button" role="tab" aria-controls="pills-home" aria-selected="true"><i
+                    class="bi bi-grid-3x3 fs-4"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="tab" data-bs-target="#pills-profile"
+                type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><i
+                    class="bi bi-window fs-4"></i></button>
+        </li>
+
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
         <!-- IMAGENES 3X3 -->
-        <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                tabindex="0">
-                <div class="row g-2 pt-3 ">
-                    <div class="col">
-                        <img src="Images/Image 1.png" class="img-fluid size-custom" alt="Imagen 1"
-                            style="object-fit: cover;">
-                    </div>
-                    <div class="col">
-                        <img src="Images/Image 2.png" class="img-fluid size-custom" alt="Imagen 2"
-                            style="object-fit: cover;">
-                    </div>
-                    <div class="col">
-                        <img src="Images/Image 3.png" class="img-fluid size-custom" alt="Imagen 3"
-                            style="object-fit: cover;">
-                    </div>
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="row g-2 pt-3 ">
+                <div class="col">
+                    <img src="Images/Image 1.png" class="img-fluid size-custom" alt="Imagen 1"
+                        style="object-fit: cover;">
                 </div>
-                <div class="row g-2 pt-3 marginp">
-                    <div class="col">
-                        <img src="Images/Image 4.png" class="img-fluid size-custom" alt="Imagen 4"
-                            style="object-fit: cover;">
-                    </div>
-                    <div class="col">
-                        <img src="Images/Image 5.png" class="img-fluid size-custom" alt="Imagen 5"
-                            style="object-fit: cover;">
-                    </div>
-                    <div class="col">
-                        <img src="Images/Image 6.png" class="img-fluid size-custom" alt="Imagen 6"
-                            style="object-fit: cover;">
-                    </div>
+                <div class="col">
+                    <img src="Images/Image 2.png" class="img-fluid size-custom" alt="Imagen 2"
+                        style="object-fit: cover;">
                 </div>
-                <div class="row g-2 pt-3 pb-5 marginp">
-                    <div class="col">
-                        <img src="Images/Image 7.jpg" class="img-fluid size-custom" alt="Imagen 1"
-                            style="object-fit: cover;">
-                    </div>
-                    <div class="col">
-                        <img src="Images/Image 8.jpg" class="img-fluid size-custom" alt="Imagen 2"
-                            style="object-fit: cover;">
-                    </div>
-                    <div class="col">
-                        <img src="Images/Image 9.jpg" class="img-fluid size-custom" alt="Imagen 3"
-                            style="object-fit: cover;">
-                    </div>
+                <div class="col">
+                    <img src="Images/Image 3.png" class="img-fluid size-custom" alt="Imagen 3"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="row g-2 pt-3 marginp">
+                <div class="col">
+                    <img src="Images/Image 4.png" class="img-fluid size-custom" alt="Imagen 4"
+                        style="object-fit: cover;">
+                </div>
+                <div class="col">
+                    <img src="Images/Image 5.png" class="img-fluid size-custom" alt="Imagen 5"
+                        style="object-fit: cover;">
+                </div>
+                <div class="col">
+                    <img src="Images/Image 6.png" class="img-fluid size-custom" alt="Imagen 6"
+                        style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="row g-2 pt-3 pb-5 marginp">
+                <div class="col">
+                    <img src="Images/Image 7.jpg" class="img-fluid size-custom" alt="Imagen 1"
+                        style="object-fit: cover;">
+                </div>
+                <div class="col">
+                    <img src="Images/Image 8.jpg" class="img-fluid size-custom" alt="Imagen 2"
+                        style="object-fit: cover;">
+                </div>
+                <div class="col">
+                    <img src="Images/Image 9.jpg" class="img-fluid size-custom" alt="Imagen 3"
+                        style="object-fit: cover;">
                 </div>
             </div>
         </div>
@@ -139,22 +138,7 @@
         <!-- Aquí van las imagenes de una x Columna -->
         <div class="tab-pane fade container-fluid" id="pills-profile" role="tabpanel"
             aria-labelledby="pills-profile-tab" tabindex="0">
-            <!-- 1 -->
-            <div class="row justify-content-center">
-                <div class="card p-0" style="width: 35rem;">
-                    <div class="d-flex px-2 mt-1">
-                        <h6 class="col-11">Fishing with my family!</h6>
-                        <p class="col-1 justify-content-end">1/12</p>
-                    </div>
-                    <img src="Images/Image 1.png" class="image-fluid p-0" alt="...">
-                    <div class="card-body">
-                        <p class="likes"> <strong> 150 Likes</strong> </p>
-                        <p class="like">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!--2  -->
+
             <div class="row justify-content-center mt-3">
                 <div class="card p-0" style="width: 35rem;">
                     <div class="d-flex px-2 mt-1">
@@ -169,106 +153,31 @@
                     </div>
                 </div>
             </div>
-            <!-- 3 -->
+
             <div class="row justify-content-center mt-3">
                 <div class="card p-0" style="width: 35rem;">
                     <div class="d-flex px-2 mt-1">
-                        <h6 class="col-11">La Orchila Sunset!</h6>
-                        <p class="col-1 justify-content-end">3/12</p>
+                        <h6 class="col-11">Jaspe Falls</h6>
+                        <p class="col-1 justify-content-end">2/12</p>
                     </div>
-                    <img src="Images/Image 3.png" class="image-fluid p-0" alt="...">
+                    <img src="Images/Image 2.png" class="image-fluid p-0" alt="...">
                     <div class="card-body">
-                        <p class="likes"> <strong> 160 Likes</strong> </p>
+                        <p class="likes"> <strong> 186 Likes</strong> </p>
                         <p class="like">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                     </div>
                 </div>
             </div>
-            <!-- 4 -->
+
             <div class="row justify-content-center mt-3">
                 <div class="card p-0" style="width: 35rem;">
                     <div class="d-flex px-2 mt-1">
-                        <h6 class="col-11">Night Flower</h6>
-                        <p class="col-1 justify-content-end">4/12</p>
+                        <h6 class="col-11">Jaspe Falls</h6>
+                        <p class="col-1 justify-content-end">2/12</p>
                     </div>
-                    <img src="Images/Image 4.png" class="image-fluid p-0" alt="...">
+                    <img src="Images/Image 2.png" class="image-fluid p-0" alt="...">
                     <div class="card-body">
-                        <p class="likes"> <strong> 1140 Likes</strong> </p>
-                        <p class="like">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- 5 -->
-            <div class="row justify-content-center mt-3">
-                <div class="card p-0" style="width: 35rem;">
-                    <div class="d-flex px-2 mt-1">
-                        <h6 class="col-11">Costa Brava</h6>
-                        <p class="col-1 justify-content-end">5/12</p>
-                    </div>
-                    <img src="Images/Image 5.png" class="image-fluid p-0" alt="...">
-                    <div class="card-body">
-                        <p class="likes"> <strong> 140 Likes</strong> </p>
-                        <p class="like">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- 6 -->
-            <div class="row justify-content-center mt-3">
-                <div class="card p-0" style="width: 35rem;">
-                    <div class="d-flex px-2 mt-1">
-                        <h6 class="col-11">What am I having for dinner tonight?</h6>
-                        <p class="col-1 justify-content-end">6/12</p>
-                    </div>
-                    <img src="Images/Image 6.png" class="image-fluid p-0" alt="...">
-                    <div class="card-body">
-                        <p class="likes"> <strong> 230 Likes</strong> </p>
-                        <p class="like">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- 7 -->
-            <div class="row justify-content-center mt-3">
-                <div class="card p-0" style="width: 35rem;">
-                    <div class="d-flex px-2 mt-1">
-                        <h6 class="col-11">Fishing with my family!</h6>
-                        <p class="col-1 justify-content-end">12/12</p>
-                    </div>
-                    <img src="Images/Image 7.jpg" class="image-fluid p-0" alt="...">
-                    <div class="card-body">
-                        <p class="likes"> <strong> 150 Likes</strong> </p>
-                        <p class="like">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- 8 -->
-            <div class="row justify-content-center mt-3">
-                <div class="card p-0" style="width: 35rem;">
-                    <div class="d-flex px-2 mt-1">
-                        <h6 class="col-11">Fishing with my family!</h6>
-                        <p class="col-1 justify-content-end">12/12</p>
-                    </div>
-                    <img src="Images/Image 8.jpg" class="image-fluid p-0" alt="...">
-                    <div class="card-body">
-                        <p class="likes"> <strong> 150 Likes</strong> </p>
-                        <p class="like">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!--  9-->
-            <div class="row justify-content-center mt-3">
-                <div class="card p-0" style="width: 35rem;">
-                    <div class="d-flex px-2 mt-1">
-                        <h6 class="col-11">Fishing with my family!</h6>
-                        <p class="col-1 justify-content-end">12/12</p>
-                    </div>
-                    <img src="Images/Image 9.jpg" class="image-fluid p-0" alt="...">
-                    <div class="card-body">
-                        <p class="likes"> <strong> 150 Likes</strong> </p>
+                        <p class="likes"> <strong> 186 Likes</strong> </p>
                         <p class="like">Some quick example text to build on the card title and make up the bulk of
                             the card's content.</p>
                     </div>
@@ -276,6 +185,10 @@
             </div>
         </div>
     </div>
+
+
+
+
 
 
 
